@@ -4,13 +4,13 @@
  *
  * Return: Always 0 (Success)
  */
-int main ()
+int main(void)
 {
 	int	a;
 	int	b;
 
 	a = 0;
-	while(a <= 98)
+	while (a <= 98)
 	{
 		b = a + 1;
 		while (b <= 99)
@@ -18,7 +18,7 @@ int main ()
 			putchar(48 + a / 10);
 			putchar(48 + a % 10);
 			putchar(' ');
-	        	putchar(48 + b / 10);
+			putchar(48 + b / 10);
 			putchar(48 + b % 10);
 			if (!(a == 98 && b == 99))
 			{
