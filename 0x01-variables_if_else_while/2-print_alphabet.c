@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	write(1, "abcdefghijklmnopqrstuvwxyz\n", 28);
+	write(1, "abcdefghijklmnopqrstuvwxyz\n", 27);
 	return (0);
 }
