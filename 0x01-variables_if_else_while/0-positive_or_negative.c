@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 /* more headers goes there */
-//  Positive anything is better than negative nothing
+
 /* betty style doc for function main goes there */
 int main(void)
 {
