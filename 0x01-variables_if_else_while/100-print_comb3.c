@@ -21,7 +21,7 @@ int main(void)
 			write(1, &b, 1);
 			if (a != '8')
 			{
-				write(1, " ,", 2);
+				write(1, ", ", 2);
 			}
 		b++;
 		}
