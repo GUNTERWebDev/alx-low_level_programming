@@ -6,12 +6,13 @@
  * Descriptio: print every minute of the day
  * Return: void
  */
-void jack_bauer(void){
-    	int	a;
+void jack_bauer(void)
+{
+	int	a;
 	int	b;
 	int	c;
-       	int 	d;
-	int 	i;
+	int	d;
+	int	i;
 
 	a = 0;
 	while (a < 3)
