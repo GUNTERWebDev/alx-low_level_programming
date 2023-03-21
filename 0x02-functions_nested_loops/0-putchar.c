@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include <unisdt.h>
 /**
- * main - Positive anything is better than negative nothing
+ * main 
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	printf("_putchar\n");
+	write(1, "_putchar\n", 9);
 	return (0);
 }
