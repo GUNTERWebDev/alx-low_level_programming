@@ -15,7 +15,7 @@ int main(void)
 		Un = Ui + Uj;
 		printf("%lu", Un);
 		Ui = Uj;
-		Uj = Uni;
+		Uj = Un;
 		if (n == 49)
 			printf("\n");
 		else
