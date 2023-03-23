@@ -7,26 +7,26 @@
  */
 int main(void)
 {
-	int i = 1;
+	int i;
 
-	while (i <= 100)
+	i = 1;
+	while (i < 101)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (i % 3 == 0 || i % 5	== 0)
 		{
-			printf("FizzBuzz ");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz ");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz ");
+			if (i % 3 == 0)
+				printf("Fizz");
+
+			if (i % 5 == 0)
+				printf("Buzz");
+			if (i != 100)
+				putchar(' ');
 		}
 		else
 			printf("%d ", i);
-	i++;
+		i++;
 	}
-	printf("\n");
+	putchar('\n');
+
 	return (0);
 }
