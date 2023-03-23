@@ -9,12 +9,13 @@ int main(void)
 {
 	long int num = 612852475143;
 	long int i;
-	while(num != 1)
+
+	while (num != 1)
 	{
 		i = 2;
 		while (i <= num)
 		{
-			if(num % i == 0)
+			if (num % i == 0)
 			{
 				num /= i;
 			}
