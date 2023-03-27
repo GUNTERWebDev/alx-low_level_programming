@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_array.c - printd array
+ * print_array - printd array
  * @a: given integer
  * @n: is the number of elements of the array to be printed
  * return: void
