@@ -21,6 +21,6 @@ int main(void)
 		i++;
 	}
 	password[15] = '\0';
-	printf("Random Password: %s\n", password);
+	printf("%s\n", password);
 	return (0);
 }
