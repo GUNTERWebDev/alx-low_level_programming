@@ -8,20 +8,19 @@
  */
 int main(void)
 {
-	int size = 20;
-	char password[size];
+	char password[20];
 	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{};:,.<>?";
 	const int charset_len = sizeof(charset) - 1;
 	int	i;
 	srand(time(NULL));
 
 	i = 0;
-	while (i < size)
+	while (i < 20)
 	{
 		password[i] = charset[rand() % charset_len];
 		i++;
 	}
-	password[size] = '\0';
+	password[20] = '\0';
 	printf("%s\n", password);
 	return (0);
 }
