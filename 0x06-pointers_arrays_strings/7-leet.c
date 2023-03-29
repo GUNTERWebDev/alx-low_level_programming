@@ -5,13 +5,6 @@
  * @s: string given
  * Return: encoded string
  */
-#include "main.h"
-
-/**
- * leet - encode into 1337
- * @s: string given
- * Return: encoded string
- */
 char *leet(char *s)
 {
 	int i, j;
