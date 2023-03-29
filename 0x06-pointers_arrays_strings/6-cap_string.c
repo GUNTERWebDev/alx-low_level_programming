@@ -30,7 +30,7 @@ char *cap_string(char *s)
 		else if (s[i] >= '0' && s[i] <= '9')
 			j = 0;
 	
-		else if (s[i] == ' ' || s[i] == '\t')
+		else if (s[i] == 32 || (s[i] >= 9 && s[i] <= 13))
 			j = 1;
 		i++;
 	}
