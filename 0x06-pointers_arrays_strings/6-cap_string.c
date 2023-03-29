@@ -30,7 +30,7 @@ char *cap_string(char *s)
 		else if (s[i] >= '0' && s[i] <= '9')
 			j = 0;
 		else
-			j = 1;
+			j = 0;
 	i++;
 	}
 	return (s);
