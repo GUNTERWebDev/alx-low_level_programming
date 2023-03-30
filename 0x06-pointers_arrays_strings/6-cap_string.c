@@ -10,8 +10,6 @@ char *cap_string(char *s)
 {
 	int index = 0;
 	
-	if (s[index] >= 'a' && s[index] <= 'a')
-		s[0] -= 32;
 	while (s[index])
 	{
 		if (s[index] == ' ' ||
