@@ -10,7 +10,7 @@ char *cap_string(char *s)
 {
 	int index = 0;
 	
-	if (s[0] >= 'A' && s[0] <= 'Z')
+	if (s[0] >= 'a' && s[0] <= 'a')
 		s[0] -= 32;
 	while (s[index])
 	{
