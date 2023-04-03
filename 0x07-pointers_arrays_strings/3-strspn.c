@@ -12,7 +12,6 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int	i;
 	unsigned int	j;
 	int	len;
-	int	idk;
 
 	i = 0;
 	len = 0;
@@ -24,15 +23,11 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				len++;
-				idk = 0;
 				break;
 			}
-			else
-				idk = 1;
-			
 			j++;
 		}
-		if (idk == 1)
+		if (accept[j] == '\0')
 		       break;	
 	i++;
 	}
