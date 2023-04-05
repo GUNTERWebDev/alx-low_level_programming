@@ -7,9 +7,9 @@
  * @end: max
  * Return: int
  */
-int sqrt_helper(int n, int start, int end)
+long sqrt_helper(int n, int start, int end)
 {
-	int	mid;
+	long	mid;
 
 	if (end < start)
 		return (-1);
