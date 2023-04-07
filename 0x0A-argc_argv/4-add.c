@@ -12,11 +12,7 @@ int main(int argc, char **argv)
 {
 	int	i = 1, res = 0;
 
-	if (argc <= 1)
-	{
-		printf("0\n");
-	}
-	else
+	if (argc > 1)
 	{
 		while (i < argc)
 		{
@@ -29,7 +25,7 @@ int main(int argc, char **argv)
 				res += atoi(argv[i]);
 			i++;
 		}
-			printf("%d\n", res);
 	}
+	printf("%d\n", res);
 	return (0);
 }
