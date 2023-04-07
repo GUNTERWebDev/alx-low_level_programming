@@ -6,7 +6,7 @@
  * @argv: arguments vector (array of strings)
  * Return: always 0
  */
-int main(int argc,char **argv)
+int main(int argc, char **argv)
 {
 	int	res;
 
@@ -14,9 +14,8 @@ int main(int argc,char **argv)
 	{
 		printf("Error\n");
 		return (1);
-	
 	}
 	res = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n",res);
+	printf("%d\n", res);
 	return (0);
 }
