@@ -15,7 +15,10 @@ char *str_concat(char *s1, char *s2)
 	int	j;
 
 	if (s1 == NULL && s2 == NULL)
-		return (0);
+	{
+		s1 = "";
+		s2 = "";
+	}
 	else if (s2 == NULL)
 		s2 = "";
 	else if (s1 == NULL)
@@ -38,5 +41,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	str[i] = '\0';
 	return (str);
-	free(str);
 }
