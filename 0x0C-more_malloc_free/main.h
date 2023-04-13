@@ -23,6 +23,6 @@ void _error(void);
 
 int leading_0(char *s);
 
-int main(int argc, char *argv[]);
+int main(void);
 
 #endif
