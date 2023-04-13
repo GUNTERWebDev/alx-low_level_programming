@@ -17,13 +17,10 @@ int *array_range(int min, int max)
 		return (NULL);
 	if (min > max)
 		return (NULL);
-	else
-	{
-		for (i = 0; min < max; i++)
-		{	
-			arr[i] = min;
-			min++;
-		}
+	for (i = 0; min < max; i++)
+	{	
+		arr[i] = min;
+		min++;
 	}
 	return (arr);
 }
