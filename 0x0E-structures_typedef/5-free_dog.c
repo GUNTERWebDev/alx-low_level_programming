@@ -1,3 +1,5 @@
+#include "dog.h"
+#include "stdlib.h"
 /**
  * free_dog - frees memory allocated for dog_t struct
  * @d: pointer to struct to be freed
