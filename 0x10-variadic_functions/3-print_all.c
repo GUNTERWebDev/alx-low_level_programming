@@ -4,13 +4,7 @@
 /**
  * print_all - prints any number of arguments passed to it based on a format
  * string that specifies the type of each argument
- * @format: a string of characters that specify the type of each argument
- *          and the separator to use between arguments
- *          c: character
- *          i: integer
- *          f: float
- *          s: string
- *
+ * @format: list of types of arguments passed to the function
  * Return: void
  */
 void print_all(const char * const format, ...)
@@ -21,7 +15,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 
 	va_start(args, format);
-	if (format != '\0')
+	if (format != NULL)
 	{
 		while (format[i] != '\0')
 		{
@@ -38,7 +32,7 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					s = va_arg(args, char *);
-					if (s == '\0')
+					if (s == NULL)
 						printf("%s(nil)", sep);
 					else
 						printf("%s%s", sep, s);
