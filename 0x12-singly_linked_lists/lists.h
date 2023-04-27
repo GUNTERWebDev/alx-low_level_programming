@@ -1,5 +1,5 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LISTS_H
+#define LISTS_H
 
 #include <stddef.h>
 /**
@@ -17,4 +17,4 @@ typedef struct list_t
 	unsigned int len;
 } list_t;
 size_t print_list(const list_t *h);
-#endif /* LIST_H */
+#endif /* LISTS_H */
