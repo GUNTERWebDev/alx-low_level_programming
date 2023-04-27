@@ -13,9 +13,9 @@ list_t *add_node(list_t **head, const char *str)
 	unsigned int count = 0;
 	char *s;
 	struct list_s *ptr = malloc(sizeof(list_t));
-	
+
 	if (!ptr)
-		return 0;
+		return (0);
 	if (str)
 	{
 		s = strdup(str);
