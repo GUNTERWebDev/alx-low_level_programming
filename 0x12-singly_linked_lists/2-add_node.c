@@ -8,7 +8,7 @@
   * @str: node's string
   * Return: pointer to new head (Success) | NULL (Failure)
   */
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	unsigned int count = 0;
 	char *s;
