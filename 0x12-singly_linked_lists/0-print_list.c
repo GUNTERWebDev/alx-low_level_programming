@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "list.h"
+#include "lists.h"
 /**
   * print_list - printf the content of linked lists
   * @h: head
