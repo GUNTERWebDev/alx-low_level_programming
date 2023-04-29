@@ -3,6 +3,7 @@
 
 /**
  * insert_nodeint_at_index - insert new node in giver index
+ * @head: head of the nodes
  * @idx: the given index
  * @n: data of the index
  *
