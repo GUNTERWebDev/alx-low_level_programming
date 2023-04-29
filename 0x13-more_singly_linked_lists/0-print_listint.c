@@ -4,8 +4,9 @@
 
 /**
  * print_listint - printf the list of linked list
- * @h - list
- * return: returns the count of list
+ * @h: list of node
+ *
+ * Return: returns the count of list
  */
 
 size_t print_listint(const listint_t *h)
