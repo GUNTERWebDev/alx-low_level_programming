@@ -10,7 +10,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i = strlen(b) - 1;
-	unsigned int total = 0, dec = 1;
+	unsigned long int total = 0, dec = 1;
 	int j = 0;
 
 	if (!b)
