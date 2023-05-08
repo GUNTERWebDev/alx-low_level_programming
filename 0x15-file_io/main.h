@@ -18,7 +18,7 @@ size_t _strlen(char *s);
 
 int append_text_to_file(const char *filename, char *text_content);
 
-size_t _strlen2(char *s);
+size_t _strlen1(char *s);
 
 
 #endif /* H */
