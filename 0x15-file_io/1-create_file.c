@@ -2,6 +2,22 @@
 #include <string.h>
 #include <stddef.h>
 /**
+ * _strlen - return the lenght of characters
+ * @s: given str
+ *
+ * Return: length
+ */
+size_t _strlen(char *s)
+{
+	size_t i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
+
+/**
  * create_file - function that creates a file.
  * @filename: fil name
  * @text_content: content string
