@@ -1,24 +1,13 @@
-#ifndef H
-#define H
-
-#include <stdio.h>
-#include <fcntl.h>
+#ifndef MAIN_H
+#define MAIN_H
+#include<string.h>
+#include<stdio.h>
 #include <unistd.h>
-#include <sys/types.h>
-#include<sys/stat.h>
-#include <stddef.h>
 #include <stdlib.h>
-#include <stdarg.h>
-
+#include <fcntl.h>
+int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
-
 int create_file(const char *filename, char *text_content);
-
-size_t _strlen(char *s);
-
 int append_text_to_file(const char *filename, char *text_content);
+#endif
 
-size_t _strlen1(char *s);
-
-
-#endif /* H */
