@@ -10,21 +10,23 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *tmp, *new;
 
-	tmp = malloc(sizeof(*tmp));
-	if (tmp == NULL)
+	new = malloc(sizeof(*new));
+	if (!new)
 		return (NULL);
-	tmp->n = n;
-	tmp->prev = NULL;
-	tmp->next = NULL;
-	if (!head || !(*head))
-		*head = tmp;
+	new->n = n;
+	new->next = NULL;
+	new->prev = NULL;
+
+	if (head == NULL || (*head) == NULL)
+		*head = new;
 	else
 	{
-		new = *head;
-		while (new->next && new)
-			new = new->next;
-		new->next = tmp;
-		(*head)->prev = new;
+		tmp = *head;
+		while (tmp && tmp->next)
+			tmp = tmp->next;
+		tmp->next = new;
+		new->prev = tmp;
 	}
-	return (tmp);
+
+	return (new);
 }
